@@ -1,0 +1,423 @@
+/**********************************/
+/* General_Section */
+/**********************************/
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+/*default browser font-size 16px, and we want 10px so 10/16 = 0.625 = 6.25%.
+    so 1rem = 10px*/
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    font-family: sans-serif;
+    color: #555;
+    font-weight: 400;
+    line-height: 1;
+    overflow-x: hidden;
+  }
+  section {
+    padding: 9.6rem 11rem 0;
+  }
+  ul li {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+  strong {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  footer {
+    padding: 9rem;
+    background-color: #444;
+    font-size: 1.6rem;
+  }
+
+/**********************************/
+  /* Main_header */
+/**********************************/
+
+  .main_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 3.2rem;
+    height: 5.5rem;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 1px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+  .main_header.colr_Nav {
+    background: linear-gradient(to top, #e0e0ff, #fff);
+  }
+  .logo {
+    color: #000099;
+    font-size: 25px;
+    font-weight: 800;
+    height: 3.2rem;
+  }
+  .nav_flex {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0 !important;
+  }
+  .nav_section:link,
+  .nav_section:visited {
+    color: #333;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .nav_section:hover,
+  .nav_section:active {
+    color: #0000ff;
+    font-size: 1.8rem;
+  }
+  .button_nav, .open {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    padding: 0px;
+  }
+  ion-icon{
+    width: 4rem;
+    height: 4rem;
+  }
+  .d_none{
+    display:none !important;
+  }
+  .stick_home {
+    position: fixed;
+    width: 100%;
+    z-index: -999;
+  }
+  .section_hero {
+    background: url("./Blockchain.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 4.8rem 0 9.6rem 0;
+    height: 100vh;
+  }
+  .title_wrap{
+    width: 50%;
+  }
+  .title::after{
+    position: absolute;
+    content: '';
+    right:0px;
+    /* top:-1rem; */
+    bottom:7px;
+    height: 2.845rem;
+    width: 3.2rem;
+    background-color: #555;
+  }
+  .title h1 {
+    border-bottom: 10px solid white;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .title h1 span{
+    font-size: 90px;
+  }
+
+/**********************************/
+  /* Full backCover css */
+/**********************************/
+
+.block {
+  position: absolute;
+    bottom: 7px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    border-bottom: 8px solid aqua;
+    border-top: 10px solid #888;
+    border-style: dashed;
+    animation: move 0.5s linear infinite;
+  }
+  @keyframes move {
+    0% {
+      width: 97.5%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .block::before{
+    position: absolute;
+    content: '';
+    left:-4px;
+    top:-1rem;
+    height: 2.845rem;
+    width: 3.2rem;
+    background-color: aqua;
+  }
+  .back-cover {
+    margin-top: 100vh;
+  }
+  .fixed_width {
+    width: 36rem;
+  }
+  .fix_content.fixed {
+    position: fixed;
+    top: 5.6rem;
+  }
+  .Content_table {
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.01);
+    background: linear-gradient(to left top, #e0e0ff, #fff);
+    text-align: left;
+    padding: 5rem;
+    height: 94.4vh;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    list-style: none;
+    padding: 1rem 0;
+    border-left: 1px solid #888;
+    margin-right: 6rem;
+  }
+  .content_li {
+    width: 17.8406rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .cont_li span, .content_li span {
+    white-space: nowrap;
+  }
+  .cont_li.active, .content_li.active {
+    color: #fff;
+    background-color: #555;
+    box-shadow: inset 0 0 12px #fff;
+    font-weight: 600;
+  }
+  .content_li:hover {
+    color: #fff;
+    background-color: #555;
+    box-shadow: inset 0 0 12px #fff;
+    font-weight: 600;
+  }
+  .link_list:link,
+  .link_list:visited {
+    transition: all 0.3s;
+  }
+  .link_list:hover,
+  .link_list:active {
+    color: inherit !important;
+  }
+  .link_list {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+  }
+
+  /* *********************** */
+        /* Answer CSS */
+  /* *********************** */
+
+  .sm_margin {
+    margin-bottom: 2.5rem;
+  }
+  .answer{
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .answer.pt_60{
+    padding-top:60px;
+  }
+  .History {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #fff, #e6e6ff);
+    color: #555;
+    font-style: italic;
+    padding: 3rem;
+    line-height: 1.6;
+    letter-spacing: 0.2;
+    font-weight: 500px;
+  }
+
+/* *********************** */
+        /* Form CSS */
+/* *********************** */
+
+  #form{
+    padding:96px 0;
+  }
+  .Unique_form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: linear-gradient(to right bottom, #ccccff, #fff, #6666ff, #ccccff);
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  .Unique_form h1 {
+    font-size: 40px !important;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 800;
+    color: #333;
+  }
+  .text_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    padding: 4rem;
+  }
+  .text_box label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .text_box input {
+    width: 100%;
+    border: none;
+    background-color: #f2f2f9;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+  }
+  .form_img {
+    background: url(./Hand_shake.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* *********************** */
+        /* Footer CSS */
+  /* *********************** */
+  
+  .grid_row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  }
+  .footer-logo{
+    display: inline-block;
+    padding: 0px 1rem;
+    background-color: #fff;
+    color: #000099;
+    font-size: 25px;
+    font-weight: 800
+  }
+  .footer-col{
+    text-transform: capitalize;
+  }
+  .footer-col ul{
+    list-style: none;
+    padding:0;
+  }
+  .footer-col ul li{
+    margin-bottom: 1rem;
+  }
+  .footer-col ul li a{
+    font-size: 1.4rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .footer-col ul li a:hover{
+    color: #eee;
+    font-size: 1.42rem;
+  }
+  .footer-col h4{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .footer-col h4::before{
+    position: absolute;
+    content: '';
+    left:0;
+    bottom:-0.6rem;
+    height: 2px;
+    width: 4rem;
+    background-color: red;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    margin: 0 5px 5px 0;
+    padding:5px;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  .footer-col .social-links a:hover{
+    color:#000;
+    background-color: #fff;
+  }
+
+/**********************************/
+  /* Manual css */
+/**********************************/
+
+.mnl_btn {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem;
+  background-color: #333;
+  font-weight: 800;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+.mnl_btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+}
+.grid_mnl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 9.6rem;
+  justify-content: center;
+}
+
+
+/**********************************/
+  /* Focus css */
+/**********************************/
+
+  .text_box *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4rem #fff;
+  }
+
+/*****************The End****************************/

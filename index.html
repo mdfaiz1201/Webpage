@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="Stylesheet" />
+    <link href="./media.css" rel="Stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./script.js"></script>
+
+    <title>Project with Bootstrap</title>
+  </head>
+  <body>
+    <header class="main_header colr_Nav">
+
+  <!-- Header Logo -->
+      
+      <a class ="text-decoration-none" href="#">
+        <p class="logo">
+        Bloc<span class="text-dark"><i>k</i></span
+        >Chain
+        </p>
+      </a>
+
+  <!-- Navbar Menu -->
+
+      <nav class="main_nav">
+        <ul class="nav_flex">
+          <li class="list_nav">
+            <a class="nav_section home" href="#">Home</a>
+          </li>
+          <li class="list_nav">
+            <a class="nav_section" href="#wrap">Content</a>
+          </li>
+          <li class="list_nav">
+            <a href="#history" class="nav_section nav_his">History</a>
+          </li>
+          <li class="list_nav">
+            <a class="nav_section" href="#form">Do Together</a>
+          </li>
+          <li class="list_nav">
+            <a class="nav_section" href="#footer_id">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+<!-- Menu button for small screen -->
+
+      <button class="button_nav">
+        <ion-icon class="icon_nav open" name="menu-outline"></ion-icon>
+        <ion-icon class="icon_nav close d_none" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <div class="stick_content Content_table">
+      <div class="w-50">
+        <h1>Content</h1>
+        <hr />
+        <ul class="content">
+          <a class="link_list" href='#block'><li class="cont_li"><span>What is Blockchain?</span></li></a>
+          <a class="link_list" href="#works"><li class="cont_li"><span>How it is Work?</span></li></a>
+          <a class="link_list" href='#types'><li class="cont_li"><span>What are the Types?</span></li></a>
+          <a class="link_list" href='#design'><li class="cont_li"><span>Structure and Design</span></li></a>
+          <a class="link_list" href='#benefits'><li class="cont_li"><span>Uses and Benefits</span></li></a>
+          <a class="link_list" href='#history'><li class="cont_li"><span>History of Blockchain</span></li></a>
+        </ul>
+      </div>
+    </div>
+    <section class="stick_home section_hero d-flex align-items-end justify-content-center">  
+      <div class="title_wrap">
+        <div class="title pb-3 position-relative">
+          <h1>
+            <span>B</span>LOCKCHAIN
+          </h1>
+          <div class="block"></div>
+        </div>
+      </div>
+    </section>
+
+<!-- White Full backCover background start  -->
+
+    <div class="bg-white">
+      <main>
+        <section id="block" class="back-cover">
+          <div class="container grid_mnl">
+
+<!-- Left container Contents -->
+
+            <div id = "first_wrap" class="fixed_width">
+              <div id="wrap" class="fixed_width fixed">
+                <div class="Content_table">
+                  <h1>Content</h1>
+                  <hr />
+                  <ul class="content">
+                    <a class="link_list" href='#block'></class><li class="content_li"><span>What is Blockchain?</span></li></a>
+                    <a class="link_list" href="#works"><li class="content_li"><span>How it is Work?</span></li></a>
+                    <a class="link_list" href='#types'><li class="content_li"><span>What are the Types?</span></li></a>
+                    <a class="link_list" href='#design'><li class="content_li"><span>Structure and Design</span></li></a>
+                    <a class="link_list" href='#benefits'><li class="content_li"><span>Uses and Benefits</span></li></a>
+                    <a class="link_list" href='#history'><li class="content_li"><span>History of Blockchain</span></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+<!-- Right container Answer -->
+
+            <div>
+              <div class="sm_margin">
+                <h2 class="heading answer">
+                  What is Blockchain?
+                </h2>
+                <hr />
+                <p>
+                  A blockchain is a distributed ledger with growing lists of
+                  records (blocks) that are securely linked together via
+                  cryptographic hashes. Each block contains a cryptographic hash
+                  of the previous block, a timestamp, and transaction data
+                  (generally represented as a Merkle tree, where data nodes are
+                  represented by leaves). The timestamp proves that the
+                  transaction data existed when the block was created. Since
+                  each block contains information about the previous block, they
+                  effectively form a chain (compare linked list data structure),
+                  with each additional block linking to the ones before it.
+                  Consequently, blockchain transactions are irreversible in
+                  that, once they are recorded, the data in any given block
+                  cannot be altered retroactively without altering all
+                  subsequent blocks.
+                </p>
+                <br />
+                <p>
+                  Blockchains are typically managed by a peer-to-peer (P2P)
+                  computer network for use as a public distributed ledger, where
+                  nodes collectively adhere to a consensus algorithm protocol to
+                  add and validate new transaction blocks. Although blockchain
+                  records are not unalterable, since blockchain forks are
+                  possible, blockchains may be considered secure by design and
+                  exemplify a distributed computing system with high Byzantine
+                  fault tolerance.
+                </p>
+              </div>
+              <div class="sm_margin">
+                <h2 class="answer" id="works">
+                  How it Works?
+                </h2>
+                <hr />
+                <p>
+                  A blockchain was created by a person (or group of people)
+                  using the name (or pseudonym) Satoshi Nakamoto in 2008 to
+                  serve as the public distributed ledger for bitcoin
+                  cryptocurrency transactions, based on previous work by Stuart
+                  Haber, W. Scott Stornetta, and Dave Bayer.[6] The
+                  implementation of the blockchain within bitcoin made it the
+                  first digital currency to solve the double-spending problem
+                  without the need of a trusted authority or central server. The
+                  bitcoin design has inspired other applications[3][2] and
+                  blockchains that are readable by the public and are widely
+                  used by cryptocurrencies. The blockchain may be considered a
+                  type of payment rail.
+                </p>
+                <br />
+                <p>
+                  Private blockchains have been proposed for business use.
+                  Computerworld called the marketing of such privatized
+                  blockchains without a proper security model "snake oil"
+                  however, others have argued that permissioned blockchains, if
+                  carefully designed, may be more decentralized and therefore
+                  more secure in practice than permissionless ones.
+                </p>
+              </div>
+              <div class="sm_margin">
+                <h2 class="answer" id="types">
+                  What are the Types?
+                </h2>
+                <hr />
+                <p>
+                  Currently, there are at least four types of blockchain
+                  networks — public blockchains, private blockchains, consortium
+                  blockchains and hybrid blockchains.
+                </p>
+                <p><strong>Public blockchain</strong></p>
+                <p>
+                  A public blockchain has absolutely no access restrictions.
+                  Anyone with an Internet connection can send transactions to it
+                  as well as become a validator (i.e., participate in the
+                  execution of a consensus protocol).[self-published source?]
+                  Usually, such networks offer economic incentives for those who
+                  secure them and utilize some type of a Proof of Stake or Proof
+                  of Work algorithm.<br />
+                  Some of the largest, most known public blockchains are the
+                  bitcoin blockchain and the Ethereum blockchain.
+                </p>
+                <p><strong>Private blockchains</strong></p>
+                <p>
+                  A private blockchain is permissioned. One cannot join it
+                  unless invited by the network administrators. Participant and
+                  validator access is restricted. To distinguish between open
+                  blockchains and other peer-to-peer decentralized database
+                  applications that are not open ad-hoc compute clusters, the
+                  terminology Distributed Ledger (DLT) is normally used for
+                  private blockchains.
+                </p>
+                <p><strong>Hybrid blockchains</strong></p>
+                <p>
+                  A hybrid blockchain has a combination of centralized and
+                  decentralized features. The exact workings of the chain can
+                  vary based on which portions of centralization and
+                  decentralization are used.
+                </p>
+                <p><strong>Sidechains</strong></p>
+                <p>
+                  A sidechain is a designation for a blockchain ledger that runs
+                  in parallel to a primary blockchain. Entries from the primary
+                  blockchain (where said entries typically represent digital
+                  assets) can be linked to and from the sidechain; this allows
+                  the sidechain to otherwise operate independently of the
+                  primary blockchain (e.g., by using an alternate means of
+                  record keeping, alternate consensus algorithm, etc.).[better
+                  source needed]
+                </p>
+              </div>
+              <div class="sm_margin">
+                <h2 class="answer" id="design">
+                Structure and Design
+              </h2>
+              <hr />
+              <p>
+                A blockchain is a decentralized, distributed, and often public,
+                digital ledger consisting of records called blocks that are used
+                to record transactions across many computers so that any
+                involved block cannot be altered retroactively, without the
+                alteration of all subsequent blocks.This allows the participants
+                to verify and audit transactions independently and relatively
+                inexpensively. A blockchain database is managed autonomously
+                using a peer-to-peer network and a distributed timestamping
+                server. They are authenticated by mass collaboration powered by
+                collective self-interests. Such a design facilitates robust
+                workflow where participants' uncertainty regarding data security
+                is marginal. The use of a blockchain removes the characteristic
+                of infinite reproducibility from a digital asset. It confirms
+                that each unit of value was transferred only once, solving the
+                long-standing problem of double-spending. A blockchain has been
+                described as a value-exchange protocol. A blockchain can
+                maintain title rights because, when properly set up to detail
+                the exchange agreement, it provides a record that compels offer
+                and acceptance.[citation needed]<br />Logically, a blockchain
+                can be seen as consisting of several layers:
+              </p>
+              <ul>
+                <li>infrastructure (hardware)</li>
+                <li>
+                  networking (node discovery, information propagation and
+                  verification)
+                </li>
+                <li>consensus (proof of work, proof of stake)</li>
+                <li>data (blocks, transactions)</li>
+                <li>
+                  application (smart contracts/decentralized applications, if
+                  applicable)
+                </li>
+              </ul>
+            </div>
+            <div class="sm_margin">
+              <h2
+              class="answer" id="benefits"
+              >
+                Uses and Benefits
+              </h2>
+              <hr />
+              <p>
+                Blockchain technology can be integrated into multiple areas. The primary use of blockchains is as a distributed ledger for cryptocurrencies such as bitcoin; there were also a few other operational products that had matured from proof of concept by late 2016. As of 2016, some businesses have been testing the technology and conducting low-level implementation to gauge blockchain's effects on organizational efficiency in their back office.
+              </p>
+              <br />
+              <p>
+                In 2019, it was estimated that around $2.9 billion were invested in blockchain technology, which represents an 89% increase from the year prior. Additionally, the International Data Corp has estimated that corporate investment into blockchain technology will reach $12.4 billion by 2022. Furthermore, According to PricewaterhouseCoopers (PwC), the second-largest professional services network in the world, blockchain technology has the potential to generate an annual business value of more than $3 trillion by 2030. PwC's estimate is further augmented by a 2018 study that they have conducted, in which PwC surveyed 600 business executives and determined that 84% have at least some exposure to utilizing blockchain technology, which indicates a significant demand and interest in blockchain technology.
+              </p><br/>
+              <p>
+                In 2019 the BBC World Service radio and podcast series Fifty Things That Made the Modern Economy identified blockchain as a technology that would have far-reaching consequences for economics and society. The economist and Financial Times journalist and broadcaster Tim Harford discussed why the underlying technology might have much wider applications and the challenges that needed to be overcome. First broadcast 29 June 2019.
+              </p>
+            </div>
+            <div class="sm_margin">
+            <h2
+               id="history" class="answer">
+                History
+              </h2>
+              <hr />
+            <div class="History">
+              Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups." Further work on a cryptographically secured chain of blocks was described in 1991 by Stuart Haber and W. Scott Stornetta. They wanted to implement a system wherein document timestamps could not be tampered with. In 1992, Haber, Stornetta, and Dave Bayer incorporated Merkle trees into the design, which improved its efficiency by allowing several document certificates to be collected into one block. Under their company Surety, their document certificate hashes have been published in The New York Times every week since 1995.
+            </div>
+          </div>
+          </div>
+        </section>
+      </main>
+
+  <!-- Form section start -->
+      
+      <section class="form-section">
+        <div  id="form" class="container">
+          <div class="Unique_form">
+            <div>
+              <h1>LET'S DO TOGETHER!</h1>
+              <form class="text_form" action="#">
+                <div class="text_box">
+                  <label for="name">Full Name</label>
+                  <input id="name" type="text" placeholder="Name" required />
+                </div>
+                <div class="text_box">
+                  <label for="Email">Email id</label>
+                  <input id="Email" type="text" placeholder="example@gmail.com" required />
+                </div>
+                <div class="text_box">
+                  <label for="phone">Mobile Number</label>
+                  <input id="phone" type="tel" inputmode="numeric" placeholder="+91XXXXXXXXXX" maxlength="10" required />
+                </div>
+                <div class="text_box">
+                  <label for="state">State</label>
+                  <input id="state" type="text" placeholder="write your state" required />
+                </div>
+                <button class="mnl_btn">Join Us</button>
+              </form>
+            </div>
+            
+  <!-- Right handShake Image -->
+  
+            <div class="form_img" role="img" aria-label="Hand shaking"></div>
+          </div>
+        </div>
+</section>
+
+<!-- Footer start -->
+
+    <footer id="footer_id" >
+      <div class="container">
+        <div class="grid_row">
+    <!-- footerLogo div-->
+          <div class="text-white owner">
+            <p class="footer-logo">
+              Bloc<span class="text-dark"><i>k</i></span
+              >Chain
+            </p>
+              <p>&COPY; All Right reserved.</p>
+              <span>Designed by <strong>Md Faiz Rabbani</strong></span>
+            </p>
+          </div>
+    <!-- company colomn start -->
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Our service</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Affiliate program</a></li>
+            </ul>
+          </div>
+    <!-- getHelp colomn start -->
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Order status</a></li>
+            </ul>
+          </div>
+    <!-- onlineShop colomn start -->
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="">watch</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">shoes</a></li>
+              <li><a href="">dress</a></li>
+            </ul>
+          </div>
+    <!-- contactUs colomn start -->
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
