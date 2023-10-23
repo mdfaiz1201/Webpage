@@ -2,7 +2,7 @@
 
 ## Overview
 
-This webpage is dedicated to Blockchain technology, created using a combination of HTML, CSS, and JavaScript. It serves as an introduction to the world of Blockchain, showcasing its applications and features. The page is thoughtfully designed, ensuring a seamless and user-friendly experience with its great UI design, well-organized content, and an intuitive menu for a seamless user experience. When users click on a content topic in the menu, the page smoothly scrolls to the corresponding section, enhancing navigation.
+This webpage is about Blockchain technology, created using a combination of HTML, CSS, and JavaScript. It serves as an introduction to the world of Blockchain, showcasing its applications and features. The page is thoughtfully designed, ensuring a seamless and user-friendly experience with its great UI design, well-organized content, and an intuitive menu for a seamless user experience. When users click on a content topic in the menu, the page smoothly scrolls to the corresponding section, enhancing navigation.
 
 Link - https://blockchain-byfaiz.netlify.app/
 
